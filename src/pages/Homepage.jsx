@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import FlagCard from "../components/flagCard";
+import FlagCard from "../components/FlagCard";
 const HomePage = () => {
-    const [data, setData] = useState([ 1, 2, 3, 4, 5,  6, 7, 8, 9, 10,  11, 12, 13, 14, 15])
+    const [data, setData] = useState([])
     function getFlagData(){
         fetch('https://xcountries-backend.labs.crio.do/all')
             .then(res => res.json())
