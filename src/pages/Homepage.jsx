@@ -21,7 +21,7 @@ const HomePage = () => {
     };
     const getSearchData = async (searchText) => {
         try {
-            const filteredData = data.filter(item => (item.common.toLowerCase().includes(searchText)))
+            const filteredData = data.filter(item => (item.common.toLowerCase().includes(searchText.toLowerCase())))
             setFilterData(filteredData)
         }
         catch (error) {
